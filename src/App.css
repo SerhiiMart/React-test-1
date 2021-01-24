@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navL {
+  background-color: #282c34;
+  min-height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}

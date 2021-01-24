@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Movie from './Movie';
 
+
 const MovieList = () => {
 const [movies, setMovies] = useState([
   { name : "The Man from Earth",
@@ -19,7 +20,7 @@ const [movies, setMovies] = useState([
   return (
     <div>
     {movies.map(movie => (
-     <Movie name={movie.name} price={movie.price}/>
+     <Movie name={movie.name} price={movie.price} key={movie.id}/>
     ))}
     </div>
   );
